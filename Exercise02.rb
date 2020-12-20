@@ -1,4 +1,5 @@
 def print_list(list)
+    
     list.delete("salmon")
     length = list.length
     puts "Number of items on list = #{length}"
@@ -19,6 +20,7 @@ def print_list(list)
     elsif bananas == true
         puts "You need to pick up bananas"
     end
+    
 end
 
 groceries = ["salmon", "almonds", "green beans", "squash"]
