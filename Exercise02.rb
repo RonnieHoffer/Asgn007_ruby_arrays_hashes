@@ -1,0 +1,1 @@
+grocery list = ["salmon", "almonds", "green beans", "squash"]
