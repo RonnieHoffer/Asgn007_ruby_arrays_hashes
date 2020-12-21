@@ -1,23 +1,19 @@
 def cohort_counter(cohorts, staff)
-    counter = 0
     sum = 0
 
     cohorts.each do |k, v|
         puts "#{k} has #{v} students."
         sum += v
-        counter += 1
     end
 
     puts "The cohorts are #{cohorts.keys}."
     puts "The total number of students in all the cohorts is #{sum}."
     puts "\n"
 
-    counter = 0
     sum = 0
     staff.each do |k, v|
         puts "#{k} has #{v} teachers."
         sum += v
-        counter += 1
     end
 
     puts "The staffgroups are #{staff.keys}."

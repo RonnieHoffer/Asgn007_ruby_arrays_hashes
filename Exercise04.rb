@@ -1,20 +1,36 @@
-def get_absent_dogs(dog_list)
+# def get_absent_dogs(dogs)
+#     absent_list = []
+#     counter = 0
+#     while counter < dogs.length
+#         if dogs[counter][:position] > 10
+#             absent_list.push(dogs[counter][:name])
+#         end
+#         counter += 1
+#     end
+#     return absent_list
+# end
+
+# def call_absent_dogs(absent_dogs)
+#     counter = 0
+#     while counter < absent_dogs.length
+#         puts "Come back #{absent_dogs[counter]}!"
+#         counter += 1
+#     end
+# end
+
+def get_absent_dogs(dogs)
     absent_list = []
-    counter = 0
-    while counter < dog_list.length
-        if dog_list[counter][:position] > 10
-            absent_list.push(dog_list[counter][:name])
+    dogs.each do |dog|
+        if dog[:position] > 10
+            absent_list.push(dog[:name])
         end
-        counter += 1
     end
     return absent_list
 end
 
 def call_absent_dogs(absent_dogs)
-    counter = 0
-    while counter < absent_dogs.length
-        puts "Come back #{absent_dogs[counter]}!"
-        counter += 1
+    absent_dogs.each do |absent_dog|
+        puts "Come back #{absent_dog}!"
     end
 end
 
